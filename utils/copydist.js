@@ -1,9 +1,6 @@
 import fs from 'node:fs'
 
-const src = 'frontend/dist'
-const dest = 'backend/dist/dist'
-
-fs.cp(src, dest, { recursive: true }, (err) => {
+fs.cp('frontend/dist', 'backend/dist/dist', { recursive: true }, (err) => {
   if (err) {
     console.error(`Error copying frontend dist: ${err}`)
   }

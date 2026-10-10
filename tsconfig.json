@@ -6,6 +6,9 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": false,
+    "types": [
+      "@types/node"
+    ],
     "allowJs": true,
     "checkJs": false,
     "strictNullChecks": true,
@@ -16,10 +19,7 @@
     "sourceMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
-    "types": [
-      "@types/node"
-    ],
+    "skipLibCheck": true
   },
   "rules": {
     "quotemark": [

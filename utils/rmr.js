@@ -1,3 +1,4 @@
+/* eslint-disable unused-imports/no-unused-vars */
 import { rmSync } from 'node:fs'
 import process from 'node:process'
 
