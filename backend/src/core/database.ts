@@ -56,7 +56,7 @@ function startDbCleanupInterval(intervalInMs: number) {
 }
 
 function startWalCheckpointInterval(intervalInMs: number) {
-  const walPath = path.join(Config.DB_PATH, '-wal')
+  const walPath = path.resolve(`${Config.DB_PATH}-wal`)
   walCheckpointInterval = setInterval(() => {
     const walSize = fs.statSync(walPath).size
     if (walSize > 10 * 1024 * 1024) {
