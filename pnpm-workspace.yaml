@@ -1,0 +1,10 @@
+packages:
+  - 'backend'
+  - 'frontend'
+
+allowBuilds:
+  better-sqlite3: true
+  caddy-baron: true
+  esbuild: true
+
+minimumReleaseAge: 1440
