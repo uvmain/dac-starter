@@ -3,10 +3,10 @@ import { createServer } from 'node:http'
 import process from 'node:process'
 import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
-import { loadEnvironmentVariables } from './core/config'
-import { closeDatabase, initialiseDatabase } from './core/database'
-import { colourLog, loggerMiddleware } from './core/logger'
-import { createRoutes, useAuth, useCompression } from './core/router'
+import { loadEnvironmentVariables } from './core/config.js'
+import { closeDatabase, initialiseDatabase } from './core/database.js'
+import { colourLog, loggerMiddleware } from './core/logger.js'
+import { createRoutes, useAuth, useCompression } from './core/router.js'
 
 await loadEnvironmentVariables()
 

@@ -1,5 +1,5 @@
 import type { Context } from 'hono'
-import { deleteAllRows, deleteRow, getAllRows, getRow, putRow } from './database'
+import { deleteAllRows, deleteRow, getAllRows, getRow, putRow } from './database.js'
 
 interface PutJson {
   key: string

@@ -2,8 +2,8 @@ import type { Database as DatabaseType } from 'better-sqlite3'
 import fs from 'node:fs'
 import path from 'node:path'
 import Database from 'better-sqlite3'
-import { Config } from './config'
-import { colourLog } from './logger'
+import { Config } from './config.js'
+import { colourLog } from './logger.js'
 
 let db: DatabaseType | undefined
 let cleanupInterval: NodeJS.Timeout | undefined

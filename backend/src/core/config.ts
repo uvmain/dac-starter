@@ -1,7 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
-import { colourLog } from './logger'
+import { colourLog } from './logger.js'
 
 export const Config = {
   BEARER_TOKEN: 'temporary-token',
